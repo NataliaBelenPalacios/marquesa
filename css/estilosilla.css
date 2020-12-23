@@ -1,0 +1,982 @@
+body {
+    width: 100%;
+    background-color: #F2ECE5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 34px;
+    padding: 0;
+    text-align: center;
+    background-color: #171717;
+    z-index: 2;
+    position: fixed;
+
+}
+
+.navbar-brand{
+    padding-top: 8px;
+}
+.navbar-brand img{
+    vertical-align: middle;
+}
+
+.navbar a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "red hat display";
+    color: #fff;
+}
+
+.user_controls {
+    padding: 0;
+    width: 100%;
+    max-width: 1274px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: auto; 
+}
+
+.navbar a span{
+    margin-left: 18px;
+
+}
+
+.first {
+    position: relative;
+}
+
+.contenido {
+
+    width: 100%;
+    height: 94px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: fixed;
+    left: 0;
+    top: 34px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navcentro {
+    max-width: 100%;
+    width: 1274px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido .navcentro .toggle{
+    position: absolute;
+    padding: 0;
+    right: 18px;
+}
+
+.contenido .navcentro .toggle>div{
+    width: 30px;
+    height: 18px;
+    position: relative;
+    z-index: 100;
+
+}
+.contenido .navcentro .toggle>div>div{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    overflow: auto;
+    z-index: 8;
+    padding: 128px 0;
+    background-color: #171717;
+    transition: all .3s ease;
+    transform: translateX(100%);
+}
+.menu-lateral ul li a{
+    display:block;
+    text-align: center;
+    padding: 0;
+    margin: 18px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.menu-lateral ul li a:hover{
+    text-decoration: none;
+    color: #701425;
+}
+
+
+
+.menu-lateral ul{
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.menu-lateral.open{
+    transform: translateX(0);
+
+}
+
+.logo {
+    width: 100%;
+    max-width: 190px;
+    padding-top: 10px;
+}
+a {
+    text-decoration: none;
+    color: #1d1d1d;
+    position: relative;
+
+}
+
+nav ul li {
+    padding-right: 63px;
+    font-family: "red hat display";
+    font-size: 14px;
+    font-weight: 500;
+    display: inline;
+}
+li:last-child {
+    padding-right: 0px;
+}
+.secciones ul li a:hover{
+    color: #701425;
+    transition: all .3s ease;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hvr-underline-from-center {
+  padding-bottom: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0px;
+  background: #701425;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+/*COMIENZO HERO IMG*/
+
+.hero {
+    width: 100%;
+    height: 449px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(../img/imagenfranja.jpg);
+    background-repeat: no-repeat;
+    background-size: 770px;
+    background-position: top right;
+    background-attachment: fixed;
+}
+
+
+.fondohero img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 449px;
+}
+
+.textohero h1 {
+
+    position: relative;
+    font-family: "playfair display";
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 100px;
+    display: inline-block;
+
+}
+
+.second {
+    padding: 100px 0 116px 0;
+}
+
+.container2 {
+    margin: 0 auto;
+    max-width: 1175px;
+}
+
+.imagenconjunto {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+
+}
+
+.fondosillas {
+    max-width: 340px;
+    max-height: 340px;
+    background-color: #701425;
+    border-radius: 50%;
+
+}
+
+.imagenconjunto img {
+
+    max-width: 387px;
+    padding-top: 41px;
+    padding-left: 51px;
+}
+
+
+h2 {
+
+    font-family: "playfair display";
+    font-size: 45px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin: 0;
+
+}
+
+.text2 {
+    font-family: "red hat display";
+    font-size: 14px;
+    max-width: 539px;
+    font-weight: 400;
+    color: #1d1d1d;
+    padding-top: 19px;
+}
+
+.text2 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.text2 ul li {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.text2 ul li:last-child {
+    font-weight: 400;
+    padding-left: 31px;
+}
+
+
+.text2 span {
+    font-size: 30px;
+    font-family: "playfair display";
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.text2 p {
+    margin: 0;
+    padding-top: 11px;
+}
+
+.medidas {
+    font-weight: 700;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 26px;
+    max-height: 47px;
+  
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 50px;
+    border: 2px solid #1d1d1d;
+    font-size: 14px;
+    font-family: "red hat display";
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+.contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-family: "red hat display";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cubito1,
+.cubito2,
+.cubito3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 45px;
+    border: 1px solid #1d1d1d;
+    vertical-align: middle;
+    
+}
+.cubito2{
+    width: 70px;
+    border-top: 1px solid #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+    border-left: 0;
+    border-right: 0;
+}
+
+.button{transition: all .5s ease;}
+
+.button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.button {
+    margin-left: 16px;
+}
+
+.text2 img {
+    padding: 20px 0;
+    max-width: 396px;
+}
+
+.third {
+    padding: 87px 0;
+    background-color: #000;
+    text-align: center;
+    align-items: center;
+}
+
+.third p {
+    font-family: "playfair display";
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    max-width: 617px;
+    margin: 0 auto;
+}
+
+.imagencentro {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.imagencentro img {
+    position: absolute;
+    max-height: 388px;
+    top: -301px;
+    opacity: 20%;
+}
+
+
+.final {
+    padding: 116px 0 148px 0;
+}
+
+.franja {
+    width: 100%;
+    height: 200px;
+    padding: 32px 0;
+    background-color: #E3D8CC;
+    position: relative;
+
+}
+
+
+.masproductos {
+    width: 100%;
+
+}
+
+
+
+.productosfinales{
+    margin: 0 auto;
+    max-width: 1171px;
+ 
+}
+
+
+.sillasfinales {
+    height: 314px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    cursor: pointer;
+
+}
+
+
+.item1text {
+    text-align: center;
+}
+
+.item1text ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.item1text ul li {
+    font-family: "red hat display";
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d1d1d;
+
+}
+
+.item1text ul li:last-child {
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.item1text ul li span {
+    font-family: "playfair display";
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.producto1{
+    width: 215px;
+}
+
+
+.producto1:hover span{
+    color:#701425;
+    transition: all .3s ease;
+
+}
+
+.producto1:hover{
+    transition: all .4s ease;
+    transform: translateY(-5px);
+}
+
+
+.hvr-underline-from-center {
+  padding-bottom: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0px;
+  background: #701425;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+.item1 .item4img {
+   transform: translateX(22px);
+}
+
+.item1 .item3img {
+   transform: translateX(25px);
+}
+.item1 .item2img {
+   transform: translateX(2px);
+}
+.item1 .item1img {
+   transform: translateX(24px);
+}
+
+
+.sillasfinales img {
+    max-height: 200px;
+}
+
+
+.finaltext {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1274px;
+    margin: 0 auto;
+}
+
+.finaltext span {
+    font-family: "red hat display";
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 14px;
+    margin-bottom: 66px;
+    color: #1d1d1d;
+    border-bottom: 3px solid #701425;
+
+
+}
+
+/*COMIENZO DEL FOOTER*/
+
+
+footer {
+
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: #171717;
+    padding: 40px 0;
+}
+
+footer .footcontacto {
+    max-width: 1274px;
+    margin: 0 auto;
+}
+
+.footcontacto {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.foot_item1 ul li {
+    font-family: "red hat display";
+    font-size: 14px;
+    margin-bottom: 21px;
+    color: #ffffff;
+    list-style: none;
+    font-weight: 400;
+}
+
+.foot_item1 ul {
+    padding: 0;
+}
+
+.foot_item1 li .sobre {
+    width: 25px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.foot_item1 li .tel {
+    width: 25px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.foot_item1 ul .contactanos {
+    font-family: "playfair display";
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.foot_item2 ul li {
+    font-family: "red hat display";
+    font-size: 14px;
+    margin-bottom: 21px;
+    color: #ffffff;
+    list-style: none;
+    font-weight: 400;
+}
+
+.foot_item2 ul {
+    padding: 0;
+}
+
+.foot_item2 ul .casa {
+    font-family: "playfair display";
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.foot_item3 ul li {
+    font-family: "red hat display";
+    font-size: 14px;
+    margin-bottom: 21px;
+    color: #ffffff;
+    list-style: none;
+    font-weight: 400;
+}
+
+.foot_item3 ul {
+    padding: 0;
+}
+
+.foot_item3 ul .social {
+    font-family: "playfair display";
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.foot_item3 li .instagram {
+    width: 25px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.foot_item3 li .facebook {
+    width: 25px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+footer .copy {
+
+    margin-top: 67px;
+    padding-top: 44px;
+}
+
+footer .copy .wrapper-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.copyr {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-foot {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.wrapper-flex img {
+    width: 190px;
+    margin-top: 44px;
+}
+
+.wrapper-flex span {
+    color: #fff;
+    font-family: "red hat display";
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.copylogo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 0.5px solid #fff;
+}
+
+.copyr {
+    position: absolute;
+    right: 0;
+}
+
+.logofooter img {
+    margin-top: 0;
+}
+
+/*DESK*/
+
+@media screen and (min-width: 1024px){
+    .toggle{
+        display: none;
+    } 
+
+}
+
+/*MOBILE*/
+
+@media (max-width: 767px){
+    .copyr span{
+        font-size: 12px;
+
+    }
+
+    .foot_item1,
+    .foot_item2,
+    .foot_item3{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .contenido{
+        width: 100%;
+        height: 60px;
+        background-color: #171717;
+        padding: 0 18px;
+        border-top: 0.5px solid #fff;
+    }
+    .logo{
+       max-width: 132px;
+       padding: 0;
+       margin:0;
+    }
+
+    .navcentro{
+        width: 100%;
+    }
+
+    .user_controls{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 0 18px;
+    }
+
+    .hidden-sm-down{
+        display: none;
+    }
+
+    .hero{
+        height: 210px;
+        background-position: top left;
+    }
+
+    .textohero h1{
+        font-size: 24px;
+    }
+
+
+    .sillasfinales{
+        margin: 50px auto;
+    }
+
+    .masproductos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .productosfinales{
+        padding: 0;
+    }
+    .col-xs-6{
+        float: left;
+        width: 50%;
+    }
+    .item1{
+        height: 189px;
+        padding-top: 129px;
+        margin-bottom: 20px;
+
+    }
+    .item1 .item1img,
+    .item1 .item2img,
+    .item1 .item3img,
+    .item1 .item4img{
+        width: 60%;
+        right: 35px;
+        transform: translateY(-124px);
+        position: absolute;
+
+    }
+
+    .item1 .item2img{
+        transform: translateY(-110px);
+    }
+
+    .finaltext{
+        margin-bottom: 50px;
+    }
+    .item1text ul li{
+        font-size: 12px;
+    }
+
+    .item1text ul li span{
+        font-size: 14px;
+    }
+
+    .fondosillas{
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .fondosillas img{
+        width: 50px,
+        height: 50px;
+        padding: 20px 0 0 20px;
+    }
+
+    .imagencentro img{
+        max-height: 200px;
+        opacity: 43%;
+        top: -160px;
+    }
+    .textocentro p{
+        font-size: 24px;
+    }
+    .third{
+        padding: 40px 0;
+    }
+    .imagenconjunto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .imagenconjunto img{
+        max-width: 258px;
+    }
+
+    .second{
+        padding: 40px 18px;
+    }
+
+ 
+    .fondosillas,
+    .text2 img{
+       position: relative;
+       right: -38px;
+    }
+
+
+    .text2 p{
+        font-size: 12px;
+        text-align: center;
+
+    }
+    .text2 ul{
+        text-align: center;
+    }
+
+    .text2 ul li:last-child{
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .text2 ul li span{
+        font-size: 24px;
+    }
+
+    .text2 ul li{
+        font-size: 16px;
+    }
+    .botones{
+        display: flex;
+        
+        justify-content: center;
+        align-content: center;
+        margin-top: 75px;
+        
+        margin: 30px 0;
+    }
+    .button{
+        margin: 0;
+        font-size: 12px;
+        padding: 10px 40px;
+        max-width: 150px;
+        margin-left: 15px;
+
+    }
+    .contador{
+        justify-content: end;
+        width: 150px;
+    }
+
+    .final{
+        padding: 20px 18px;
+    }
+
+    .finaltext span{
+        font-size: 12px;
+        margin: 0 auto;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #701425;
+    }
+
+
+}
+
+/*MEDIA*/
+
+@media (max-width: 991px) and (min-width: 767px){
+
+    .navcentro{
+        width: 100%;
+    }
+
+    .contenido{
+        background-color: #171717;
+        padding: 0 18px;
+        border-top: 0.5px solid #fff;
+    }
+
+    .user_controls{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 0 18px;
+    }
+}

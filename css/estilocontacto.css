@@ -1,0 +1,640 @@
+body {
+    width: 100%;
+    background-color: #F2ECE5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 34px;
+    padding: 0;
+    text-align: center;
+    background-color: #171717;
+    z-index: 2;
+    position: fixed;
+
+}
+
+.navbar-brand{
+    padding-top: 8px;
+}
+.navbar-brand img{
+    vertical-align: middle;
+}
+
+.navbar a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "red hat display";
+    color: #fff;
+}
+
+.user_controls {
+    padding: 0;
+    width: 100%;
+    max-width: 1274px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: auto; 
+}
+
+.navbar a span{
+    margin-left: 18px;
+
+}
+
+.first {
+    position: relative;
+}
+
+.contenido {
+
+    width: 100%;
+    height: 94px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: fixed;
+    left: 0;
+    top: 34px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navcentro {
+    max-width: 100%;
+    width: 1274px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido .navcentro .toggle{
+    position: absolute;
+    padding: 0;
+    right: 18px;
+}
+
+.contenido .navcentro .toggle>div{
+    width: 30px;
+    height: 18px;
+    position: relative;
+    z-index: 100;
+
+}
+.contenido .navcentro .toggle>div>div{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    overflow: auto;
+    z-index: 8;
+    padding: 128px 0;
+    background-color: #171717;
+    transition: all .3s ease;
+    transform: translateX(100%);
+
+
+}
+.menu-lateral ul li a{
+    display:block;
+    text-align: center;
+    padding: 0;
+    margin: 18px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.menu-lateral ul li a:hover{
+    text-decoration: none;
+    color: #701425;
+}
+
+.menu-lateral ul{
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.menu-lateral.open{
+    transform: translateX(0);
+
+}
+
+.logo {
+    width: 100%;
+    max-width: 190px;
+    padding-top: 10px;
+}
+a {
+    text-decoration: none;
+    color: #1d1d1d;
+    position: relative;
+
+}
+
+nav ul li {
+    padding-right: 63px;
+    font-family: "red hat display";
+    font-size: 14px;
+    font-weight: 500;
+    display: inline;
+}
+li:last-child {
+    padding-right: 0px;
+}
+.secciones ul li a:hover{
+    color: #701425;
+    transition: all .3s ease;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hvr-underline-from-center {
+  padding-bottom: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0px;
+  background: #701425;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+/*COMIENZO HERO IMG*/
+
+.hero {
+    width: 100%;
+    height: 449px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(../img/fondo_contacto.png);
+    background-repeat: no-repeat;
+    background-size: 1050px;
+    background-position: top right;
+    background-attachment: fixed;
+}
+
+
+.textohero h1 {
+
+    position: relative;
+    font-family: "red hat display";
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 100px;
+    display: inline-block;
+
+}
+
+
+/*COMIENZO FORMULARIO*/
+
+.contenidoform {
+    padding: 153px 0 214px 0;
+}
+
+.formtext {
+    margin: 0 auto;
+    max-width: 1274px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.formulario {
+    max-width: 789px;
+}
+
+
+.llenar {
+    margin-bottom: 14px;
+    border: 1.5px solid #171717;
+    font-family: "red hat display";
+    font-size: 12px;
+    font-weight: 500px;
+    color: #1d1d1d;
+}
+
+.mensaje {
+    border: 1.5px solid #171717;
+    font-family: "red hat display";
+    font-size: 12px;
+    font-weight: 500px;
+    color: #1d1d1d;
+    resize: vertical;
+    min-height: 184px;
+}
+
+.llenar,
+.mensaje {
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 100%;
+    padding: 5px;
+}
+
+p {
+    font-family: "red hat display";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.uboton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 50px;
+    margin-top: 34px;
+    border: 1.5px solid #000000;
+    font-size: 14px;
+    font-family: "red hat display";
+    font-weight: 700;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.contacto ul {
+    list-style: none;
+    font-family: "red hat display";
+    font-size: 16px;
+    font-weight: 400;
+    color: #1d1d1d;
+    padding-bottom: 35px;
+    margin: 0;
+}
+
+.contacto {
+    margin-top: 87px;
+    margin-left: 55px;
+}
+
+.contacto ul li {
+    margin-bottom: 14px;
+}
+
+ul .titulo {
+    font-family: "playfair display";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+li img {
+    max-width: 25px;
+    padding-right: 12px;
+    vertical-align: middle;
+}
+
+.contacto ul:last-child {
+    position: relative;
+}
+
+.sillacontact {
+    width: 100%;
+    max-width: 334px;
+    width: 334px;
+    position: absolute;
+    left: 120px;
+    bottom: -210px;
+}
+
+
+/*COMIENZO DEL FOOTER*/
+
+
+footer {
+
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: #171717;
+    padding: 40px 0;
+}
+
+footer .footcontacto {
+    max-width: 1274px;
+    margin: 0 auto;
+}
+
+.footcontacto {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.foot_item1 ul li {
+    font-family: "red hat display";
+    font-size: 14px;
+    margin-bottom: 21px;
+    color: #ffffff;
+    list-style: none;
+    font-weight: 400;
+}
+
+.foot_item1 ul {
+    padding: 0;
+}
+
+.foot_item1 li .sobre {
+    width: 25px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.foot_item1 li .tel {
+    width: 25px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.foot_item1 ul .contactanos {
+    font-family: "playfair display";
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.foot_item2 ul li {
+    font-family: "red hat display";
+    font-size: 14px;
+    margin-bottom: 21px;
+    color: #ffffff;
+    list-style: none;
+    font-weight: 400;
+}
+
+.foot_item2 ul {
+    padding: 0;
+}
+
+.foot_item2 ul .casa {
+    font-family: "playfair display";
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.foot_item3 ul li {
+    font-family: "red hat display";
+    font-size: 14px;
+    margin-bottom: 21px;
+    color: #ffffff;
+    list-style: none;
+    font-weight: 400;
+}
+
+.foot_item3 ul {
+    padding: 0;
+}
+
+.foot_item3 ul .social {
+    font-family: "playfair display";
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.foot_item3 li .instagram {
+    width: 25px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.foot_item3 li .facebook {
+    width: 25px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+footer .copy {
+
+    margin-top: 67px;
+    padding-top: 44px;
+}
+
+footer .copy .wrapper-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.copyr {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-foot {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.wrapper-flex img {
+    width: 190px;
+    margin-top: 44px;
+}
+
+.wrapper-flex span {
+    color: #fff;
+    font-family: "red hat display";
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.copylogo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 0.5px solid #fff;
+}
+
+.copyr {
+    position: absolute;
+    right: 0;
+}
+
+.logofooter img {
+    margin-top: 0;
+}
+
+/*DESK*/
+
+@media screen and (min-width: 1024px){
+    .toggle{
+        display: none;
+    } 
+}
+
+/*MOBILE*/
+
+@media (max-width: 767px){
+    .copyr span{
+        font-size: 12px;
+
+    }
+
+    .foot_item1,
+    .foot_item2,
+    .foot_item3{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .contenido{
+        width: 100%;
+        height: 60px;
+        background-color: #171717;
+        padding: 0 18px;
+        border-top: 0.5px solid #fff;
+    }
+    .logo{
+       max-width: 132px;
+       padding: 0;
+       margin:0;
+    }
+
+    .navcentro{
+        width: 100%;
+    }
+
+    .user_controls{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 0 18px;
+    }
+
+    .hidden-sm-down{
+        display: none;
+    }
+
+    .hero{
+        height: 210px;
+        background-position: top left;
+    }
+
+    .textohero h1{
+        font-size: 24px;
+    }
+
+    .sillacontact{
+        display: none;
+    }
+    .contacto ul{
+        display: none;
+    }
+    .contenidoform{
+        padding: 60px 0;
+    }
+
+    .formtext{
+        margin: 0 18px;
+    }
+
+    .contenidoform p{
+        font-size: 14px;
+    }
+
+    .boton{
+        font-size: 12px;
+        margin-top: 18px;
+        padding: 10px 25px;
+    }
+}
+
+/*MEDIA*/
+
+@media (max-width: 991px) and (min-width: 767px){
+
+    .navcentro{
+        width: 100%;
+    }
+
+    .contenido{
+        background-color: #171717;
+        padding: 0 18px;
+        border-top: 0.5px solid #fff;
+    }
+
+    .user_controls{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 0 18px;
+    } 
+
+}
+
+

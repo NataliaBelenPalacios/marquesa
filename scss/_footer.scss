@@ -1,0 +1,128 @@
+footer {
+    bottom: 0;
+    width: 100%;
+
+    .footer {
+        background-color: #171717;
+        padding: 40px 0;
+
+        .footcontacto {
+            max-width: 1274px;
+            margin: 0 auto;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+
+                ul {
+                    padding: 0;
+
+                    li {
+                        font-family: "red hat display";
+                        font-size: 14px;
+                        margin-bottom: 21px;
+                        color: #ffffff;
+                        list-style: none;
+                        font-weight: 400;
+
+                        .contactanos {
+                            font-family: "playfair display";
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #ffffff;
+                        }
+
+                        .sobre {
+                            @extend %iconosfooter;
+                        }
+
+                        .tel {
+                            @extend %iconosfooter;
+                        }
+
+                    }
+                }
+
+                .casa {
+                    font-family: "playfair display";
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #ffffff;
+                }
+
+                .instagram {
+                    @extend %iconosfooter;
+                }
+
+                .facebook {
+                    @extend %iconosfooter;
+
+                }
+            }
+
+            .copy {
+                margin-top: 67px;
+                padding-top: 44px;
+
+                .wrapper-flex {
+                    display: flex;
+                    flex-wrap: nowrap;
+
+                    img {
+                        width: 190px;
+                        margin-top: 44px;
+                    }
+                }
+            }
+
+            .wrapper-flex {
+                img {
+                    width: 190px;
+                    margin-top: 44px;
+                }
+
+            }
+
+            .copylogo {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 40px;
+                border-top: 0.5px solid #fff;
+
+                .copyr {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    position: absolute;
+                    right: 0;
+
+                    span {
+                        color: #fff;
+                        font-family: "red hat display";
+                        font-size: 14px;
+                        font-weight: 200;
+
+                    }
+
+                }
+            }
+
+            .logofooter {
+                img {
+                    margin-top: 0;
+                }
+            }
+
+        }
+    }
+
+}
