@@ -35,7 +35,6 @@ body {
 
 }
 
-
 .user_controls {
     padding: 0;
     width: 100%;
@@ -71,6 +70,10 @@ body {
 
 }
 
+.bg-inverse{
+   background-color: rgba(0,0,0,0.4);
+   transition: all 0.8s ease;
+}
 
 .navcentro {
     max-width: 100%;

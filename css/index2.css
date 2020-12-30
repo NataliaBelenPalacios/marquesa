@@ -63,6 +63,12 @@ body {
     justify-content: center;
 
 }
+
+.bg-inverse{
+   background-color: rgba(0,0,0,0.4);
+   transition: all 0.8s ease;
+}
+
 .navcentro {
     max-width: 100%;
     width: 1274px;

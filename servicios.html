@@ -34,7 +34,7 @@
     </nav>
     <nav class="navbar-expand-lg">
         <section class="first">
-            <div class="contenido">
+            <div id="menu" class="contenido">
                 <div class="navcentro">
                     <a class="navbar-brand logo" href="index2.html"><img src="img/logo_blanco.svg"></a>
                     <div class="collapse navbar-collapse secciones" id="navbarNav">
@@ -173,6 +173,15 @@
     });
 
     console.log('asdasdasd');
+    </script>
+    <script>
+        $(window).scroll(function(){
+            if ($("#menu").offset().top > 321) {
+                $("#menu").addClass("bg-inverse");
+            } else{
+                $("#menu").removeClass("bg-inverse");
+            }
+        });
     </script>
 </body>
 
